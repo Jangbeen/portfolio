@@ -35,7 +35,7 @@
             <li class="navbar__menu__item">ABOUT</li>
             <li class="navbar__menu__item">SKILLS</li>
             <li class="navbar__menu__item">MY WORK</li>
-            <li class="navbar__menu__item">TESTIMONIALS</li>
+            <!-- <li class="navbar__menu__item">TESTIMONIALS</li> -->
             <li class="navbar__menu__item">CONTACT</li>
         </ul>
     </nav>
@@ -53,7 +53,7 @@
     </section>
     
     <!-- About Section -->
-    <section id="about" class="section">
+    <section id="about" class="section section__container">
         <h1>About me</h1>
         <p>
             My name is Jangbeen Park. I'm from Seoul, South Korea. 
@@ -135,7 +135,7 @@
                 height="80px"
                 />
                 <div class="school__description">
-                    <p class="school__jobs__title">UVU Bachelor's degree in Computer Science</p>
+                    <p class="school__jobs__title">Utah Valley University Bachelor's degree in Computer Science</p>
                     <p class="school__jobs__period">May 2019 - December 2022</p>
                 </div>
             </div>
@@ -144,7 +144,8 @@
     
     <!-- Skills Section -->
     <section id="skills" class="section">
-        <h1>Skills</h1>
+        <div class="section__container">
+            <h1>Skills</h1>
         <h2>Skills & Attributes</h2>
         <p>
             Passionate about learning new skills and technologies. 
@@ -157,52 +158,52 @@
                 <h3 class="skillset__title">Skills</h3>
                 <!-- HTML Skill Descrption -->
                 <div class="skill">
-                    <div class="skill_description">
+                    <div class="skill__description">
                         <span>HTML</span>
                         <span>90%</span>
                     </div>
                     <div class="skill__bar">
-                        <div class="skill__value"></div>
+                        <div class="skill__value" style="width: 90%;"></div>
                     </div>
                 </div>
                 <!-- CSS Skill Description -->
                 <div class="skill">
-                    <div class="skill_description">
+                    <div class="skill__description">
                         <span>CSS</span>
                         <span>70%</span>
                     </div>
                     <div class="skill__bar">
-                        <div class="skill__value"></div>
+                        <div class="skill__value" style="width: 70%;"></div>
                     </div>
                 </div>
                 <!-- JS Skill Description -->
                 <div class="skill">
-                    <div class="skill_description">
+                    <div class="skill__description">
                         <span>JavaScript</span>
                         <span>70%</span>
                     </div>
                     <div class="skill__bar">
-                        <div class="skill__value"></div>
+                        <div class="skill__value" style="width: 70%;"></div>
                     </div>
                 </div>
                 <!-- Java Skill Description -->
                 <div class="skill">
-                    <div class="skill_description">
+                    <div class="skill__description">
                         <span>Java</span>
                         <span>80%</span>
                     </div>
                     <div class="skill__bar">
-                        <div class="skill__value"></div>
+                        <div class="skill__value" style="width: 80%;"></div>
                     </div>
                 </div>
                 <!-- C++ Skill Descrption -->
                 <div class="skill">
-                    <div class="skill_description">
+                    <div class="skill__description">
                         <span>C++</span>
                         <span>70%</span>
                     </div>
                     <div class="skill__bar">
-                        <div class="skill__value"></div>
+                        <div class="skill__value" style="width: 70%;"></div>
                     </div>
                 </div>
             </div>
@@ -224,6 +225,7 @@
                         <li><span>Math</span></li>
                     </ul>
                 </div>
+                </div>
             </div>
         </div>
     </section>
@@ -233,17 +235,17 @@
         <h1>My Work</h1>
         <h3>Projects</h3>
         <div class="work__categories">
-            <button class="category__btn">
-                All<span class="category__count"">3</span>
+            <button class="category__btn active">
+                All <span class="category__count"">3</span>
             </button>
             <button class="category__btn">
-                Front-end<span class="category__count"">1</span>
+                Front-end <span class="category__count"">1</span>
             </button>
             <button class="category__btn">
-                Back-end<span class="category__count"">1</span>
+                Back-end <span class="category__count"">1</span>
             </button>
             <button class="category__btn">
-                Software<span class="category__count"">1</span>
+                Software <span class="category__count"">1</span>
             </button>
         </div>
         
@@ -252,38 +254,40 @@
             href="https://github.com/Jangbeen/CS2550" 
             class="project"
             target="blank">
+                <img src="./images/Work/front-end.png" 
+                alt="recommend"
+                class="project__image
+                /">
+                <div class="project__description">
+                    <h3>Recommend Generate Website</h3>
+                    <span>A website that write recommend letter (HTML, CSS, JS)</span>
+                </div>
             </a>
-            <img src="./images/Work/front-end.png" alt="recommend">
-            <div class="project__description">
-                <h3>Recommend Generate Website</h3>
-                <span>A website that write recommend letter</span>
-            </div>
-        </div>
-
-        <div class="work__projects">
             <a 
             href="https://www.youtube.com/watch?v=D8_0NdHN9vc" 
             class="project"
             target="blank">
+                <img src="./images/Work/back-end.png" 
+                alt="youtube"
+                class="project__image"
+                />
+                <div class="project__description">
+                    <h3>Sports Team Website</h3>
+                    <span>A website that has both front-end and Back-end (HTML, CSS, JavaScript, Node.JS, NoSql)</span>
+                </div>
             </a>
-            <img src="./images/Work/back-end.png" alt="youtube">
-            <div class="project__description">
-                <h3>Sports Team Website</h3>
-                <span>A website that has both front-end and Back-end</span>
-            </div>
-        </div>
-
-        <div class="work__projects">
             <a 
             href="https://github.com/Jangbeen/CS4490" 
             class="project"
             target="blank">
+                <img class="project__image" 
+                src="./images/Work/compiler.png" 
+                alt="compiler">
+                <div class="project__description">
+                    <h3>Compiler</h3>
+                    <span>A working compiler (Java, Antlr)</span>
+                </div>
             </a>
-            <img class="project__img" src="./images/Work/compiler.png" alt="compiler">
-            <div class="project__description">
-                <h3>Compiler</h3>
-                <span>A working compiler</span>
-            </div>
         </div>
     </section>
 
