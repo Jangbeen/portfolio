@@ -115,6 +115,14 @@ p{
     padding: 16px;
     /* border-bottom: 5px solid var(--color-white); */
 }
+.navbar__toggle-btn{
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    top:25px;
+    color: var(--color-white);
+    display: none;
+}
 .navbar__menu{
     display: flex;
 }
@@ -387,4 +395,33 @@ p{
 }
 .contact__links i:hover{
     transform: scale(1.2);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px){
+    .navbar__toggle-btn{
+        display: block;
+    }
+    #navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar__menu{
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .about__majors{
+        flex-direction: column;
+    }
+    .major{
+        margin-bottom: 38px;
+    }
+    .skillset{
+        flex-direction: column;
+    }
+    .project{
+        flex-grow: 1;
+    }
 }
