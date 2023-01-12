@@ -52,6 +52,14 @@ ul{
     list-style: none;
     padding-left: 0;
 }
+button{
+    /* 투명하게 */
+    background-color: transparent;
+    cursor: pointer;
+    /* Reset button */
+    border: none;
+    outline: none;
+}
 
 /* Typography */
 h1{
@@ -99,6 +107,7 @@ p{
 .navbar__menu__item{
     padding: 8px 12px;
     margin: 0 4px;
+    font-size: 20px;
     cursor: pointer;
     border-radius: var(--size-border-radius);
 }
@@ -107,4 +116,30 @@ p{
 }
 .navbar__menu__item:hover{
     background-color: darkcyan;
+}
+
+/* Home */
+#home{
+    background: url(./images/my_bg.png) center/cover no-repeat;
+    padding: 40px;
+    text-align: center;
+}
+.home__avatar{
+    width: 300px; 
+    height: 300px;
+    border: var(--size-border-radius) solid var(--color-white);
+    border-radius: 50%;
+}
+.home__title,
+.home__description{
+    color: var(--color-white);
+}
+.home__contact{
+    color: var(--color-white);
+    font-size: var(--font-regular);
+    font-weight: var(--weight-bold);
+    margin: 24px;
+    padding: 8px 12px;
+    border: 2px solid var(--color-blue);
+    border-radius: 4px;
 }
