@@ -26,8 +26,8 @@
     <nav id="navbar">
         <!-- Icon and Title -->
         <div class="navbar__logo">
-            <img src="./images/logo_final.png" alt="Star" width="32px" height="32px">
-            <a href="#">JB's Portfolio</a>
+            <img src="./images/logo_final.png" alt="Star" width="35px" height="35px">
+            <a href="#">JB Park</a>
         </div>
         <!-- Menu list -->
         <ul class="navbar__menu">
@@ -47,13 +47,13 @@
             alt="Jangbeen Profile Picture" 
             class="home__avatar"
         />
-        <h1 class="home__title">Hello,<br> I do code</h1>
+        <h1 class="home__title">Hello,<br> I'm a code lover</h1>
         <h3 class="home__description">A Programmer currently living in Utah, USA</h3>
-        <button class="home__contact">CONTACT</button>
+        <button class="home__contact">CONTACT ME</button>
     </section>
     
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class="section">
         <h1>About me</h1>
         <p>
             My name is Jangbeen Park. I'm from Seoul, South Korea. 
@@ -63,65 +63,87 @@
         </p>
         <div class="about__majors">
             <!-- Front-end Skill Section -->
-            <div class="major__icon">
-                <i class="fab fa-html5"></i>
-            </div>
-            <div class="major__title">
-                Front-end
-            </div>
-            <div class="major__description">
-                HTML, CSS, JavaScript, React
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <div class="major__title">
+                    Front-end
+                </div>
+                <div class="major__description">
+                    HTML, CSS, JavaScript, React
+                </div>
             </div>
             <!-- Back-end Skill Section -->
-            <div class="major__icon">
-                <i class="fab fa-node"></i>            
-            </div>
-            <div class="major__title">
-                Back-end
-            </div>
-            <div class="major__description">
-                Node.JS, mySQL
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fab fa-node"></i>            
+                </div>
+                <div class="major__title">
+                    Back-end
+                </div>
+                <div class="major__description">
+                    Node.JS, mySQL
+                </div>
             </div>
             <!-- Software Development Skill Section -->
-            <div class="major__icon">
-                <i class="fab fa-java"></i>            
-            </div>
-            <div class="major__title">
-                Software development
-            </div>
-            <div class="major__description">
-                Java, C++, Python
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fab fa-java"></i>            
+                </div>
+                <div class="major__title">
+                    Software development
+                </div>
+                <div class="major__description">
+                    Java, C++, Python
+                </div>
             </div>
             <!-- Other Language Skill Section -->
-            <div class="major__icon">
-                <i class="fas fa-code"></i>           
-            </div>
-            <div class="major__title">
-                Other
-            </div>
-            <div class="major__description">
-                C, Rust, Standardn ML
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fas fa-code"></i>           
+                </div>
+                <div class="major__title">
+                    Other
+                </div>
+                <div class="major__description">
+                    C, Rust, Standardn ML
+                </div>
             </div>
         </div>
 
         <div class="about__school__jobs">
             <!-- Job Experience -->
             <div class="job">
-                <img src="./images/JobSchool/landvoice-logo.png" alt="Landvoice Logo" class="school__jobs__logo">
-                <p class="school__jobs__title">Landvoice Front-end development intern</p>
-                <p class="school__jobs__period">May 2021 - August 2021</p>
+                <img src="./images/JobSchool/landvoice-logo.png" 
+                alt="Landvoice Logo" 
+                class="school__jobs__logo"
+                width="80px"
+                height="80px"
+                />
+                <div class="job__description">
+                    <p class="school__jobs__title">Landvoice Front-end development intern</p>
+                    <p class="school__jobs__period">May 2021 - August 2021</p>
+                </div>
             </div>
             <!-- School -->
             <div class="school">
-                <img src="./images/JobSchool/uvu-logo.png" alt="UVU Logo" class="school__jobs__logo">
-                <p class="school__jobs__title">UVU Bachelor's degree in Computer Science</p>
-                <p class="school__jobs__period">May 2019 - December 2022</p>
+                <img src="./images/JobSchool/uvu-logo.png" 
+                alt="UVU Logo" 
+                class="school__jobs__logo"
+                width=80px"
+                height="80px"
+                />
+                <div class="school__description">
+                    <p class="school__jobs__title">UVU Bachelor's degree in Computer Science</p>
+                    <p class="school__jobs__period">May 2019 - December 2022</p>
+                </div>
             </div>
         </div>
     </section>
     
     <!-- Skills Section -->
-    <section id="skills">
+    <section id="skills" class="section">
         <h1>Skills</h1>
         <h2>Skills & Attributes</h2>
         <p>
@@ -207,7 +229,7 @@
     </section>
 
     <!-- Work Section -->
-    <section id="work">
+    <section id="work" class="section">
         <h1>My Work</h1>
         <h3>Projects</h3>
         <div class="work__categories">
