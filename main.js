@@ -40,6 +40,18 @@ document.addEventListener('scroll', () => {
     home.style.opacity = 1 - window.scrollY / homeHeight;
 })
 
+//Arrow up button to scroll up to the top
+const arrowBtn = document.querySelector('.arrow__btn');
+document.addEventListener('scroll', () => {
+    if(window.scrollY > homeHeight/2){
+        arrowBtn.classList.add('arrow__up')
+    }else{
+        arrowBtn.classList.remove('arrow__up');
+    }
+})
+arrowBtn.addEventListener('click', () => {
+    scrollIntoView('#home');
+})
 
 //Helper funtion for scrolling into view
 function scrollIntoView(selector){

@@ -13,7 +13,7 @@
     --color-yellow: #fff7d1;
     --color-orange: #feb546;
     --color-black: #000000;
-    --color-crayon: darkcyan;
+    --color-crayon: #6CB4EE;
 
     /* Font size */
     --font-large: 48px;
@@ -410,6 +410,27 @@ p{
 }
 .contact__links i:hover{
     transform: scale(1.2);
+}
+
+.arrow__btn{
+    /* display: none; */
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--animation-duration) ease-in-out;
+}
+.arrow__up{
+    opacity: 1;
+    pointer-events: auto;
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+    font-weight: var(--weight-bold);
+    bottom: 50px;
+    right: 50px;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    border-radius: 50%;
 }
 
 /* Responsive */
