@@ -117,7 +117,8 @@ p{
     color: var(--color-white);
     padding: 8px;
     transition: all var(--animation-duration) ease-in-out;
-    /* border-bottom: 5px solid var(--color-white); */
+    /* border-bottom : 5px solid var(--color-white); */
+    z-index: 1; /* Make navbar to be very on the top*/
 }
 #navbar.navbar--scrolled{
     background-color: var(--color-blue);

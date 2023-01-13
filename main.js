@@ -1,6 +1,5 @@
 'use strict';
 
-
 //Make Navbar transparent when it is on the top
 //As it scrolled down add class ('navbar--scrolled') and change it's background in style.css
 const navbar = document.querySelector('#navbar');
@@ -12,4 +11,17 @@ document.addEventListener('scroll', () => {
     }else{
         navbar.classList.remove('navbar--scrolled')
     }
+})
+
+// Handle scrolling when tapping on the navbar menu
+const navbarMenu = document.querySelector(".navbar__menu");
+navbarMenu.addEventListener('click', (event) => {
+    //event = 클릭이되는것
+    const target = event.target;
+    const link = target.dataset.link; //data-link 의 값을 가져온다
+    if(link == null){
+        return;
+    }
+    const scrollTo = document.querySelector(link);
+    scrollTo.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
 })
