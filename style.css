@@ -107,13 +107,22 @@ p{
 
 /* Navbar */
 #navbar{
+    position: fixed;
+    width:100%;
     display: flex;
     justify-content: space-between;
-    background-color: var(--color-blue);
+    /* background-color: var(--color-blue); */
+    background-color: transparent;
     align-items: center;
     color: var(--color-white);
-    padding: 16px;
+    padding: 8px;
+    transition: all var(--animation-duration) ease-in-out;
     /* border-bottom: 5px solid var(--color-white); */
+}
+#navbar.navbar--scrolled{
+    background-color: var(--color-blue);
+    padding: 8px;
+    /* transition을 여기적용할경우 ease-in만 가능하고 ease-out을 하지않기떄문에 #navbar에 넣는디 */
 }
 .navbar__toggle-btn{
     position: absolute;
@@ -148,6 +157,7 @@ p{
 #home{
     background: url(./images/my_bg.png) center/cover no-repeat;
     padding: 40px;
+    padding-top: 120px;
     text-align: center;
 }
 .home__avatar{
@@ -422,6 +432,6 @@ p{
         flex-direction: column;
     }
     .project{
-        flex-grow: 1;
+        flex-grow: 1; /*화면을 채운다*/
     }
 }
