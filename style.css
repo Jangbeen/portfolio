@@ -161,6 +161,10 @@ p{
     padding-top: 120px;
     text-align: center;
 }
+.home--scrolled{
+    background-color: transparent;
+    transition: all var(--animation-duration) ease-in-out;
+}
 .home__avatar{
     width: 250px; 
     height: 250px;
