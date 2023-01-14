@@ -145,12 +145,11 @@ p{
     margin: 0 4px;
     font-size: 20px;
     cursor: pointer;
+    border: 1px solid transparent;
     border-radius: var(--size-border-radius);
 }
-.navbar__menu__item.active{
-    border: 2px solid var(--color-white);
-}
 .navbar__menu__item:hover{
+    border-color: var(--color-white);
     background-color: var(--color-crayon);
 }
 
@@ -310,12 +309,12 @@ p{
     font-size: var(--font-regular);
     padding: 8px 48px 8px 60px;
 }
-.category__btn.active .category__count,
+.category__btn.selected .category__count,
 .category__btn:hover .category__count{
     opacity: 1;
     top:0;
 }
-.category__btn.active,
+.category__btn.selected,
 .category__btn:hover{
     background-color: var(--color-crayon);
     color: var(--color-white);

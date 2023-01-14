@@ -62,6 +62,15 @@ workBtnContainer.addEventListener('click', (event) => {
     if(filter == null){
         return;
     }
+
+    //Remove selection from the previous and the selct the new one
+    const active = document.querySelector('.category__btn.selected');
+    active.classList.remove('selected');
+    // If number clicked, event.target.nodeName === "SPAN"
+    // Therfore, make it point to the parent node
+    const target = event.target.nodeName === 'BUTTON' ? event.target : event.target.parentNode; 
+    target.classList.add('selected');
+
     projectContainer.classList.add('animation-out');
     //browser api 0.3 sec later run these codes
     setTimeout(() => {
