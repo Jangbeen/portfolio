@@ -242,17 +242,17 @@
             <h1>My Work</h1>
         <h3>Projects</h3>
         <div class="work__categories">
-            <button class="category__btn active">
-                All <span class="category__count"">3</span>
+            <button class="category__btn active" data-filter="*">
+                All <span class="category__count">3</span>
             </button>
-            <button class="category__btn">
-                Front-end <span class="category__count"">1</span>
+            <button class="category__btn" data-filter="front-end">
+                Front-end <span class="category__count">1</span>
             </button>
-            <button class="category__btn">
-                Back-end <span class="category__count"">1</span>
+            <button class="category__btn" data-filter="back-end">
+                Back-end <span class="category__count">1</span>
             </button>
-            <button class="category__btn">
-                Software <span class="category__count"">1</span>
+            <button class="category__btn"  data-filter="software">
+                Software <span class="category__count">1</span>
             </button>
         </div>
         
@@ -260,7 +260,9 @@
             <a 
             href="https://github.com/Jangbeen/CS2550" 
             class="project"
-            target="blank">
+            target="blank"
+            data-type="front-end"
+            />
                 <img src="./images/Work/front-end.png" 
                 alt="recommend"
                 class="project__image
@@ -273,7 +275,9 @@
             <a 
             href="https://www.youtube.com/watch?v=D8_0NdHN9vc" 
             class="project"
-            target="blank">
+            target="blank"
+            data-type="back-end"
+            />
                 <img src="./images/Work/back-end.png" 
                 alt="youtube"
                 class="project__image"
@@ -286,7 +290,9 @@
             <a 
             href="https://github.com/Jangbeen/CS4490" 
             class="project"
-            target="blank">
+            target="blank"
+            data-type="software"
+            />
                 <img class="project__image" 
                 src="./images/Work/compiler.png" 
                 alt="compiler">
@@ -319,6 +325,6 @@
     <button class="arrow__btn">
         <i class="fas fa-arrow-up"></i>
     </button>
-    
+
 </body>
 </html>

@@ -53,6 +53,29 @@ arrowBtn.addEventListener('click', () => {
     scrollIntoView('#home');
 })
 
+// Projects button clicked
+const workBtnContainer = document.querySelector('.work__categories');
+const projectContainer = document.querySelector('.work__projects');
+const projects = document.querySelectorAll('.project'); //모든 프로젝트 요소들을 배열로 가지고옴
+workBtnContainer.addEventListener('click', (event) => {
+    const filter = event.target.dataset.filter || event.target.parentNode.dataset.filter;
+    if(filter == null){
+        return;
+    }
+    projectContainer.classList.add('animation-out');
+    //browser api 0.3 sec later run these codes
+    setTimeout(() => {
+        projects.forEach((p) => {
+            if(filter === '*' || filter === p.dataset.type){
+                p.classList.remove('invisible')
+            }else{
+                p.classList.add('invisible')
+            }
+        })
+        projectContainer.classList.remove('animation-out');
+    }, 300)
+})
+
 //Helper funtion for scrolling into view
 function scrollIntoView(selector){
     const scrollTo = document.querySelector(selector);
