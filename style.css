@@ -378,7 +378,7 @@ p{
     transition: all var(--animation-duration) ease-in;
 }
 .project:hover .project__description{
-    opacity: 0.8;
+    opacity: 0.7;
     transform: translateY(0px);
 }
 .project__description h3{
@@ -436,8 +436,7 @@ p{
     font-weight: var(--weight-bold);
     bottom: 50px;
     right: 50px;
-    background-color: var(--color-blue);
-    color: var(--color-white);
+    color: var(--color-black);
     border-radius: 50%;
 }
 
